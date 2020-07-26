@@ -107,6 +107,8 @@ p {
 .adress-footer:focus,
 .site-nav .link:hover,
 .site-nav .link:focus,
+.header-adress:hover,
+.header-adress:focus,
 .site-nav .link.curent {
   color: var(--accent-color);
 }
@@ -124,13 +126,7 @@ p {
 .section-title-portf {
   color: var(--title-text-color);
 }
-.adress-item a:hover {
-  color: var(--accent-color);
-}
-.adress-item a:hover svg {
-  fill: var(--accent-color);
-}
-.adress-link a,
+.header-adress,
 .adress-footer {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -138,34 +134,14 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.icon-envelope {
-  width: 16px;
-  height: 11.2px;
-  fill: var(--primary-text-color);
-  margin-right: 10px;
-}
-.icon-tel {
-  width: 10px;
-  height: 14.9px;
-  fill: var(--primary-text-color);
-  margin-right: 10px;
-}
-
+/* Секция Герой*/
 .hero {
   max-width: 1600px;
+  background-color: rgba(47, 48, 58, 0.8);
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url("../images/hero/hero_opt.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .hero-title {
   margin-bottom: 20px;
@@ -191,24 +167,26 @@ p {
 /*секция особенности*/
 
 .osob-items {
-  display: block;
   width: 270px;
   text-align: left;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-.osob-items .ocob-picture {
-  width: 270px;
-  height: 120px;
-  padding: 25px 100px;
-  background-color: var(--bgr-section-color);
 }
 .osob-items:not(:last-child) {
   margin-right: 30px;
 }
+.osob-items .bgr-osob {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+.bgr-osob,
 .comand {
   background-color: var(--bgr-section-color);
+}
+.bgr-osob:hover,
+.bgr-osob:focus {
+  background-color: var(--accent-color);
 }
 .section-title-osob {
   font-weight: 700;
@@ -285,26 +263,8 @@ p {
   margin-top: 16px;
   margin-bottom: 24px;
 }
-.container-sosial-comand-link:hover {
-  background-color: var(--accent-color);
-}
-.container-sosial-comand-link:hover .container-sosial-comand-svg {
-  fill: #ffffff;
-}
-.container-sosial-comand-svg {
-  width: 20px;
-  height: 20px;
-  fill: #757575;
-}
-.container-sosial-comand-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  background-color: #ffffff;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin-right: 10px;
+.container-sosial-item:not(:last-child) {
+  margin-right: 32px;
 }
 /* Секция постоянные клиенты */
 .container-clients {
@@ -323,7 +283,6 @@ p {
 .container-clients-item:not(:last-child) {
   margin-right: 30px;
 }
-
 /* footer*/
 .logo-footer {
   max-width: 1600px;
@@ -343,23 +302,9 @@ p {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.container-sosial-item-link:hover {
-  background-color: var(--accent-color);
-}
-.container-sosial-item-svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--link-text-color);
-}
-.container-sosial-item-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
+.div-text-footer .container-social .social {
   background-color: rgba(255, 255, 255, 0.1);
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin-right: 10px;
+  height: 44px;
 }
 .logo-footer .container {
   display: flex;
@@ -377,12 +322,8 @@ p {
 .footer-adress-mail {
   padding: 9px 0 9px 0;
 }
-.primary botton {
-  display: block;
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
+.div-text-footer .container-social .social {
+  margin-top: 20px;
 }
 .container .portfolio,
 .container .osob-container,
