@@ -29,7 +29,7 @@ p {
   list-style: none;
 }
 .section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .container {
   width: 1200px;
@@ -47,7 +47,7 @@ p {
   justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 32px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .navigation {
   display: flex;
@@ -191,6 +191,7 @@ p {
   font-size: 36px;
   line-height: 1.17;
   align-items: center;
+  margin-bottom: 50px;
 }
 /*секция особенности*/
 
@@ -252,13 +253,10 @@ p {
   text-align: center;
   align-items: center;
 }
-.section-title2 {
-  padding-bottom: 50px;
-  text-align: center;
-}
 .container-comand-item {
   width: 270px;
   background-color: var(--link-text-color);
+  padding-bottom: 24px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
@@ -275,6 +273,7 @@ p {
 .bgr-comand p {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 24px;
 }
 .container-sosial .social {
   width: 206px;
@@ -289,8 +288,9 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
-  margin-bottom: 24px;
+}
+.container-sosial-item:not(:last-child) {
+  margin-right: 10px;
 }
 .container-sosial-comand-link:hover {
   background-color: var(--accent-color);
@@ -311,11 +311,10 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-right: 10px;
 }
 /* Секция постоянные клиенты */
-.container-clients {
-  margin-top: 50px;
+.client {
+  padding-top: 132px;
 }
 .container-clients-item {
   display: flex;
@@ -468,13 +467,14 @@ p {
   align-items: center;
 }
 /*   ПОРТФОЛИО*/
+.rabot {
+  padding-top: 93px;
+}
 .container-portfolio {
   justify-content: center;
-  margin-bottom: 34px;
-  margin-top: 93px;
+  margin-bottom: 40px;
 }
 .container-button-item {
-  margin-bottom: 56px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
