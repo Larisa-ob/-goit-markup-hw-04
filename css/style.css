@@ -211,7 +211,6 @@ p {
   margin-bottom: 50px;
 }
 /*секция особенности*/
-
 .osob-items {
   display: block;
   width: 270px;
@@ -407,6 +406,7 @@ p {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: start;
 }
 .container-sosial-item-link:hover {
   background-color: var(--accent-color);
@@ -442,8 +442,8 @@ p {
 .footer-adress-mail {
   padding: 9px 0 9px 0;
 }
-.div-text-footer {
-  text-align: start;
+.container-social {
+  margin-top: 20px;
 }
 .div-text-footer-write {
   display: flex;
